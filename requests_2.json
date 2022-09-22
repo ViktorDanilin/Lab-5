@@ -1,0 +1,21 @@
+[
+   {
+      "id": "absolution-by-the-sea-la-jolla",
+      "name": "Absolution By the Sea",
+      "brewery_type": "brewpub",
+      "street": "7536 Fay Ave",
+      "address_2": null,
+      "address_3": null,
+      "city": "La Jolla",
+      "state": "California",
+      "county_province": null,
+      "postal_code": "92037-4839",
+      "country": "United States",
+      "longitude": "-117.2740167",
+      "latitude": "32.84083388",
+      "phone": "6192024152",
+      "website_url": null,
+      "updated_at": "2022-08-20T02:56:08.975Z",
+      "created_at": "2022-08-20T02:56:08.975Z"
+   }
+]

@@ -2,18 +2,6 @@
 import requests
 import json
 
-# newsapi
-url_1 = ('https://newsapi.org/v2/everything?'
-         'q=Apple&'
-         'from=2022-09-22&'
-         'sortBy=popularity&'
-         'apiKey=694c15265e8c435fbc7d9e827ca5e917')
-
-r_1 = requests.get(url_1)
-r_1 = r_1.json()
-with open('requests_1.json', 'w') as file_1:
-    json.dump(r_1, file_1, indent=3)
-
 # current weather on Novosibirsk
 # for Novosibirsk lat=55.018803, lon=82.933952
 url_2 = ('http://api.openweathermap.org/data/2.5/weather?'
@@ -28,3 +16,23 @@ print("погода в Новосибирске:", data['weather'][0]['descripti
 print("температура:", data['main']['temp'], "по Цельсию")
 print("давление:", data['main']['pressure'], "гекто-паскаль")
 print("влажность:", data['main']['humidity'], "%")
+
+# newsapi
+url_1 = ('https://newsapi.org/v2/everything?'
+         'q=bbc-news&'
+         'from=2022-09-22&'
+         'sortBy=popularity&'
+         'apiKey=694c15265e8c435fbc7d9e827ca5e917')
+
+r_1 = requests.get(url_1)
+r_1 = r_1.json()
+with open('requests_1.json', 'w') as file_1:
+    json.dump(r_1, file_1, indent=3)
+
+# random beer api
+url_3 = ('https://api.openbrewerydb.org/breweries/random')
+
+r_3 = requests.get(url_3)
+r_3 = r_3.json()
+with open('requests_2.json', 'w') as file_2:
+    json.dump(r_3, file_2, indent=3)
